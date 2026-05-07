@@ -1,0 +1,313 @@
+<!-- Save this file as index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyanu Razz Portfolio</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#111;
+            color:white;
+        }
+
+        /* Navbar */
+
+        nav{
+            background:#000;
+            padding:15px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav h1{
+            color:orange;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:orange;
+        }
+
+        /* Home Section */
+
+        .home{
+            height:90vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            text-align:center;
+        }
+
+        .home h2{
+            font-size:50px;
+            margin-bottom:10px;
+        }
+
+        .home span{
+            color:orange;
+        }
+
+        .home p{
+            margin-top:10px;
+            font-size:20px;
+        }
+
+        .btn{
+            margin-top:20px;
+            padding:12px 25px;
+            background:orange;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:18px;
+        }
+
+        /* About Section */
+
+        .about{
+            padding:60px 20px;
+            text-align:center;
+        }
+
+        .about h2{
+            font-size:40px;
+            margin-bottom:20px;
+            color:orange;
+        }
+
+        /* Skills */
+
+        .skills{
+            padding:60px 20px;
+            text-align:center;
+        }
+
+        .skills h2{
+            color:orange;
+            margin-bottom:30px;
+        }
+
+        .skill-box{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        .card{
+            background:#222;
+            padding:20px;
+            width:200px;
+            border-radius:10px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:scale(1.05);
+            background:orange;
+            color:black;
+        }
+
+        /* Projects */
+
+        .projects{
+            padding:60px 20px;
+            text-align:center;
+        }
+
+        .projects h2{
+            color:orange;
+            margin-bottom:30px;
+        }
+
+        .project-box{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        .project{
+            background:#222;
+            width:250px;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        /* Contact */
+
+        .contact{
+            padding:60px 20px;
+            text-align:center;
+        }
+
+        .contact h2{
+            color:orange;
+            margin-bottom:20px;
+        }
+
+        input, textarea{
+            width:300px;
+            padding:10px;
+            margin:10px;
+            border:none;
+            border-radius:5px;
+        }
+
+        textarea{
+            height:100px;
+        }
+
+        footer{
+            background:black;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+        <h1>Gyanu Razz</h1>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+
+    <section class="home">
+
+        <h2>Hello, I'm <span>Gyanu Razz</span></h2>
+
+        <p>Python Developer | SQL Analyst | Power BI Developer</p>
+
+        <button class="btn">Hire Me</button>
+
+    </section>
+
+    <!-- About -->
+
+    <section class="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a Python Developer and Data Analyst.
+            I create Power BI dashboards, Python automation tools,
+            SQL analysis projects, and desktop applications.
+        </p>
+
+    </section>
+
+    <!-- Skills -->
+
+    <section class="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skill-box">
+
+            <div class="card">Python</div>
+            <div class="card">SQL</div>
+            <div class="card">Power BI</div>
+            <div class="card">Pandas</div>
+            <div class="card">Tkinter</div>
+            <div class="card">GitHub</div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+
+    <section class="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-box">
+
+            <div class="project">
+                <h3>Attendance System</h3>
+                <p>Python Tkinter based attendance tool.</p>
+            </div>
+
+            <div class="project">
+                <h3>Power BI Dashboard</h3>
+                <p>Superstore sales analysis dashboard.</p>
+            </div>
+
+            <div class="project">
+                <h3>QR Generator</h3>
+                <p>Generate QR codes using Python.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact">
+
+        <h2>Contact Me</h2>
+
+        <form>
+
+            <input type="text" placeholder="Your Name"><br>
+
+            <input type="email" placeholder="Your Email"><br>
+
+            <textarea placeholder="Your Message"></textarea><br>
+
+            <button class="btn">Send</button>
+
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>© 2026 Gyanu Razz | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
